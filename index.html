@@ -86,57 +86,42 @@
                     <div class="message-text">Hey there 💪 <br /> How Can I Help
                         You?</div>
                     <!-- bot message -->
-                   
-                    </div>
-                     <!-- user message -->
-                    <div class="message user-message">
-                       
-                        <div class="message-text ">Lorem ipsum dolor sit.</div>
-                         <!-- <span class="">
-                            <i class="fa-sharp fa-solid fa-message-bot"></i>
-                        </span> -->
-                        <!-- user message -->
 
-                   
                 </div>
+                <!-- user message -->
 
-                   <div class="message bot-message thinking">
-                    <span class="bot-avatar">
-                        <i class="fa-sharp fa-solid fa-message-bot"></i>
-                    </span>
-                    <div class="message-text">
-                        <div class="thinking-indicator">
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                        </div>
-                    </div>
-                    <!-- bot message -->
-                   
-                    </div>
                 <!-- chatBody -->
-                  
+
             </div>
             <!-- chat fotter -->
-                    <div class="chat-footer">
-                        <form action="#" class="chat-form">
-                            <textarea placeholder="Message...."
-                                class="message-input" required></textarea>
+            <div class="chat-footer">
+                <form action="#" class="chat-form">
+                    <textarea placeholder="Message...."
+                        class="message-input" required></textarea>
 
-                            <div class="chat-controls">
-                                <button type="button">
-                                    <i
-                                        class="fa-sharp fa-solid fa-face-smile"></i>
-                                </button>
-                                <button type="submit">
-                                    <i class="fa-regular fa-paperclip"></i>
-                                </button>
-                                <button type="submit" id="Send-message">
-                                    <i class="fa-regular fa-arrow-up"></i>
-                                </button>
-                            </div>
-                        </form>
+                    <div class="chat-controls">
+                        <button type="button">
+                            <i
+                                class="fa-sharp fa-solid fa-face-smile"></i>
+                        </button>
+                        <div class="file-upload-wrapper">
+                            <input type="file" accept="images/*" id="fle-input" hidden>
+                            <img src="#" >
+                            <button type="submit" id="file-upload">
+                                <i class="fa-regular fa-paperclip"></i>
+                            </button>
+                            <button type="submit" id="file=cancle">
+                                <i class="fa-regular fa-paperclip"></i>
+                            </button>
+
+                        </div>
+
+                        <button type="submit" id="Send-message">
+                            <i class="fa-regular fa-arrow-up"></i>
+                        </button>
                     </div>
+                </form>
+            </div>
 
             <script src="./js/main.js"></script>
         </body>

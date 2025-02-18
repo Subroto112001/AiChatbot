@@ -96,6 +96,8 @@ body {
   overflow-y: auto;
   height: 460px;
   margin-bottom: 82px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccccf5 transparent ;
 }
 .chat-body .message {
   display: flex;
@@ -136,6 +138,8 @@ body {
   -ms-border-radius: 13px 13px 13px 3px;
   -o-border-radius: 13px 13px 13px 3px;
 }
+
+
 .chat-body .user-message .message-text {
   color: #fff;
   background: #5350c4;
@@ -145,6 +149,17 @@ body {
   -ms-border-radius: 13px 13px 3px 13px;
   -o-border-radius: 13px 13px 3px 13px;
 }
+
+.chat-body .user-message .attachment{
+  width: 50%;
+  margin-top: -7px;
+  border-radius: 13px 3px 13px 13px;
+  -webkit-border-radius: 13px 3px 13px 13px;
+  -moz-border-radius: 13px 3px 13px 13px;
+  -ms-border-radius: 13px 3px 13px 13px;
+  -o-border-radius: 13px 3px 13px 13px;
+}
+
 .chat-body .bot-message .thinking .message-tex {
   padding: 2px 16px;
 }
@@ -165,7 +180,7 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   -webkit-border-radius: 50%;
-  /* animation: dotPulse 1.8s ease-in-out infinite ; */
+  animation: dotPulse 1.8s ease-in-out infinite ;
 }
 .chat-body .bot-message .thinking-indicator .dot :not(1) {
   animation-delay: 0.2s;
@@ -268,4 +283,24 @@ display: block;
 }
 .chat-form .chat-controls button:hover{
 background: #f1f1ff;
+}
+.chat-form .file-upload-wrapper{
+  height: 35px;
+  width: 35px;
+  position: relative;
+}
+.chat-form .file-upload-wrapper img{
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.chat-form .file-upload-wrapper .file-uploaded img{
+  display: block !important; 
 }
